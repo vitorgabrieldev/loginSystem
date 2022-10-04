@@ -21,7 +21,7 @@
 
                 $qtdUsers = $sql_query->num_rows;
 
-                if($qtdUsers == 1) {
+                if($qtdUsers >= 1) {
                     $user = $sql_query->fetch_assoc();
 
                     if(!isset($_SESSION)) { 
